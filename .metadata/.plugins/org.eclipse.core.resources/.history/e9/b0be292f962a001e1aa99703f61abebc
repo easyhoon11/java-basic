@@ -1,0 +1,15 @@
+package com.leejihoon.board.service.implement;
+
+import com.leejihoon.board.dto.request.SignUpRequestDto;
+import com.leejihoon.board.dto.response.SignUpResponseDto;
+import com.leejihoon.board.service.UserService;
+
+public class UserServiceImplement implements UserService {
+
+	@Override
+	public SignUpResponseDto signUp(SignUpRequestDto dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

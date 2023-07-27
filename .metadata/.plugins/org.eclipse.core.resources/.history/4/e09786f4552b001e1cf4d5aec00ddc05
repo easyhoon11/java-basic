@@ -1,0 +1,26 @@
+package com.leejihoon.board.controller.implement;
+
+import com.leejihoon.board.controller.UserController;
+import com.leejihoon.board.dto.request.SignUpRequestDto;
+import com.leejihoon.board.dto.response.SignUpResponseDto;
+import com.leejihoon.board.service.UserService;
+import com.leejihoon.board.service.implement.UserServiceImplement;
+
+public class UserControllerImplement implements UserController {
+	
+	private final UserService userService;
+	
+	public UserControllerImplement(UserService userService) {
+		this.userService = userService;
+	}
+	
+	@Override
+	public SignUpResponseDto signUp(SignUpRequestDto requestDto) {
+		
+		boolean isVaild = requestDto.valid();
+		if(!isVaild) return new SignUpResponseDto(false, "올바르지 않은 입력입니다.");
+		
+		SignUpResponseDto result = userService.signUp(requestDto);
+		return result;
+	}
+}

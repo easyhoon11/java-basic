@@ -1,0 +1,27 @@
+package com.leejihoon.board.dto.response;
+
+public class ResponseEntity<D> {
+	private int status;
+	private String message;
+	private D data;
+	
+	public ResponseEntity(int status, String message, D date) {
+		super();
+		this.status = status;
+		this.message = message;
+		this.data = date;
+	}
+
+	@Override
+	public String toString() {
+		return "[status=" + status + ", message=" + message + ", data=" + data + "]";
+	}
+	
+	public static <D> ResponseEntity<D> badRequest() {
+		return new ResponseEntity<D>(400, "올바르지 않은 입력입니다.", null);
+	}
+	
+	public static <D> ResponseEntity<D> unauthorzed() {
+		return new ResponseEntity<D>(401, "로그인 정보가 일치하지 않습니다.", null);
+	}
+}

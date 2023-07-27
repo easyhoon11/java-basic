@@ -1,0 +1,9 @@
+package com.leejihoon.board;
+
+public class BoardApplication {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

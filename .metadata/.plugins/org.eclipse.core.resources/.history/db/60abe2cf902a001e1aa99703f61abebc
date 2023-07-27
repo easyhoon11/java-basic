@@ -1,0 +1,50 @@
+package com.leejihoon.board.repository.implement;
+
+import com.leejihoon.board.entity.User;
+import com.leejihoon.board.repository.UserRepository;
+
+public class UserRepositoryImplement implements UserRepository {
+
+	@Override
+	public boolean create(User entity) {
+		// entity가 null 인지?
+		if (entity == null) return false;
+		if (!entity.isCreateValid()) return false;
+		
+		USERS.add(entity);
+		
+		return false;
+		
+	}
+
+	@Override
+	public User read(String key) {
+		User result = null;
+		
+		if (key == null) return result;
+		
+		for(User user: USERS) {
+			String email = user.getEmail();
+			
+			if (email.equals(key)) {
+				result = user;
+				break;
+			}
+		}
+		
+		return result;
+	}
+
+	@Override
+	public boolean update(User entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(String key) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

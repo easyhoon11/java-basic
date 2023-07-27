@@ -1,0 +1,17 @@
+package com.leejihoon.board.repository;
+
+import com.leejihoon.board.entity.Board;
+
+public interface BoardRepository {
+	// 데이터 생성 (저장) : CREATE
+		boolean create(Board board);
+		
+		// 데이터 읽기 (검색) : READ
+		Board read(int boardNumber);
+		
+		// 데이터 수정 (수정) : UPDATE
+		boolean update(Board board);
+		
+		// 데이터 삭제 (삭제) : DELETE
+		boolean delete(int boardNumber);
+}

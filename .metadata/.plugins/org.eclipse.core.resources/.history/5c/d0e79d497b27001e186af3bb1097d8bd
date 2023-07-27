@@ -1,0 +1,5 @@
+package com.leejihoon.board.common;
+
+public class BoardIndex {
+
+}

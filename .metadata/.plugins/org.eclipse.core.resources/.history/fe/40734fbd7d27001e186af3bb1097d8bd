@@ -1,0 +1,5 @@
+package com.leejihoon.board.controller;
+
+public interface UserController {
+
+}

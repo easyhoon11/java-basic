@@ -1,0 +1,16 @@
+package com.leejihoon.board.dto.response;
+
+public class ResponseEntity<D> {
+	private int status;
+	private String message;
+	private D date;
+	
+	public ResponseEntity(int status, String message, D date) {
+		super();
+		this.status = status;
+		this.message = message;
+		this.date = date;
+	}
+	
+	
+}

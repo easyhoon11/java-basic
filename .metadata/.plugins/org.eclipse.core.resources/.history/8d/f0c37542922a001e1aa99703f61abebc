@@ -1,0 +1,7 @@
+package com.leejihoon.board.repository;
+
+import com.leejihoon.board.entity.Board;
+
+public interface BoardRepository extends Repository<Board, Integer>{
+
+}

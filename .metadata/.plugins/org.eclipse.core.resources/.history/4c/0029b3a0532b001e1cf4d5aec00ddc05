@@ -1,0 +1,6 @@
+package com.leejihoon.board.dto.response;
+
+public class ResponseEntity {
+	private int status;
+	private String message;
+}

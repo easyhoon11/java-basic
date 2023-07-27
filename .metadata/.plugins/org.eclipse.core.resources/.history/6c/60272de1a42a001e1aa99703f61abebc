@@ -1,0 +1,15 @@
+package com.leejihoon.board.controller.implement;
+
+import com.leejihoon.board.controller.UserController;
+import com.leejihoon.board.dto.request.SignUpRequestDto;
+import com.leejihoon.board.dto.response.SignUpResponseDto;
+
+public class UserControllerImplement implements UserController {
+
+	@Override
+	public SignUpResponseDto signUp(SignUpRequestDto requestDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

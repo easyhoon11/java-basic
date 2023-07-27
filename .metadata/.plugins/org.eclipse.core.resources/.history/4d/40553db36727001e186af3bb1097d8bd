@@ -1,0 +1,5 @@
+package com.leejihoon.board.entity;
+
+public class User {
+
+}

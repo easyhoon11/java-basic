@@ -1,0 +1,11 @@
+package com.leejihoon.board.service;
+
+import com.leejihoon.board.dto.request.SignUpRequestDto;
+import com.leejihoon.board.dto.response.SignUpResponseDto;
+
+public interface UserService {
+	
+	SignUpResponseDto signUp(SignUpRequestDto dto);
+	
+	
+}

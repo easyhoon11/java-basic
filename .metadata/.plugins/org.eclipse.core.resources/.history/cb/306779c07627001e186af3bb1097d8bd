@@ -1,0 +1,5 @@
+package com.leejihoon.board.dto.request;
+
+public class SingUpRequestDto {
+
+}

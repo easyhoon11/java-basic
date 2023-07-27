@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;chapter2.aircon&apos; to &apos;Aircon&apos;&#x0D;&#x0A;- Original project: &apos;JavaBasic&apos;&#x0D;&#x0A;- Original element: &apos;chapter2.aircon&apos;&#x0D;&#x0A;- Renamed element: &apos;chapter2.Aircon&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;aircon&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;chapter2{aircon.java[aircon" matchStrategy="1" name="Aircon" qualified="false" references="true" similarDeclarations="false" stamp="1689648567941" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,17 @@
+package com.leejihoon.board.entity;
+
+//좋아요한 사용자의 프로필 사진 / 좋아요 한 사용자의 닉네임 / [좋아요한 사용자 이메일]
+
+public class Liky {
+	private String userProfileImage;
+	private String userEmail;
+	private String userNickname;
+	
+	public Liky(String userProfileImage, String userEmail, String userNickname) {
+		this.userProfileImage = userProfileImage;
+		this.userEmail = userEmail;
+		this.userNickname = userNickname;
+	}
+	
+	
+}

@@ -1,0 +1,5 @@
+package com.leejihoon.board.repository;
+
+public interface BoardRepository {
+
+}
